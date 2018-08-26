@@ -23,3 +23,6 @@ accounts-ui
 accounts-password
 accounts-facebook
 kadira:flow-router
+aldeed:collection2@3.0.0
+ostrio:files
+aldeed:simple-schema
