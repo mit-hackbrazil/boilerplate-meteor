@@ -22,8 +22,14 @@ static-html
 accounts-password
 accounts-facebook
 kadira:flow-router
+<<<<<<< HEAD
 useraccounts:semantic-ui
 accounts-ui-unstyled
 useraccounts:bootstrap
 accounts-ui
 kadira:react-layout
+=======
+aldeed:collection2@3.0.0
+ostrio:files
+aldeed:simple-schema
+>>>>>>> ddbf7c5780bc7f2816e646e652cbd9d539e0bd16
