@@ -1,0 +1,31 @@
+.login-wrapper{
+    background-color:#FFF;
+    width: auto;
+    padding: 10px;
+    font-size: 12pt;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    float: right;
+    text-align: right;
+}
+
+
+#login-buttons{
+    display: block;
+    width:200px;
+}
+
+.login-buttons-with-only-one-button{
+    background: #f00;
+}
+
+#login-dropdown-list{
+    margin-top:30px;
+    border-radius:0px;
+    width:200px;
+}
+
+button{
+    background-color:#fff;
+}

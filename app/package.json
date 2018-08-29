@@ -12,7 +12,8 @@
     "griddle-react": "^1.13.1",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-mounter": "^1.2.0"
   },
   "meteor": {
     "mainModule": {

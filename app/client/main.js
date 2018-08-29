@@ -5,19 +5,34 @@ import { Template } from 'meteor/templating';
 import { Blaze } from 'meteor/blaze';
 
 import { FlowRouter } from 'meteor/kadira:flow-router';
-//import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { ReactLayout } from 'meteor/kadira:react-layout';
 
-import App from '../views/containers/App.js';
+//import { BlazeLayout } from 'meteor/kadira:blaze-layout'; //--not using directly
+import { mount } from 'react-mounter';
 
+import AppLayout from '../views/containers/AppLayout';
+import Team from "../views/containers/Team";
+import App from "../views/containers/App";
+/*
 Meteor.startup(() => {
-  render(<App />, document.getElementById("root"));
+  render(<AppLayout />, document.getElementById('root'))
+})
+*/
+
+FlowRouter.route('/', {
+  name: 'Home',
+  action: function () {
+    ReactLayout.render(AppLayout, {
+      content: <App />
+    });
+  }
 });
 
 FlowRouter.route('/team/:_id', {
-  name: 'list.show',
-  action() {
-    mount(AppContainer, {
-      main: <App />
+  name: 'Team',
+  action: function () {
+    ReactLayout.render(AppLayout, {
+      content: <Team />
     });
-  },
+  }
 });
